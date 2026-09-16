@@ -32,11 +32,14 @@ public class Variables {
 		// Making a Scanner so the user can input data
 		Scanner keyboard = new Scanner(System.in);
 		
-		int age; // The age of the user.
+		int age; // The age of the user, will be asked.
+		double salary; // The salary of the user, will be asked.
 		
 		System.out.println("Insert your age:");
 		age = keyboard.nextInt();
-		System.out.println("Your age is: " + age);
+		System.out.println("Insert your salary:");
+		salary = keyboard.nextDouble();
+		System.out.println("You are a " + age + "year old that makes " + salary + " euros.");
 	}
 }
 // Quack
