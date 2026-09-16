@@ -1,4 +1,4 @@
 .obsidian/
 .vscode/
-1r/Code/.metadata/
+*.metadata/
 .DS_Store
