@@ -8,7 +8,7 @@ public class Variables {
     
 	//Main program
 	public static void main (String[] args) {
-		System.out.println("---Variables---");
+		System.out.println("----Variables----");
 		
 		// Most used data types:
 		int intNum = 7; // This is an integer, a number either positive or negative that is not a decimal (-2,147,483,648 to 2,147,483,647).
@@ -27,7 +27,7 @@ public class Variables {
 		char letter = 'Z'; // It holds a single letter or ascii characters, it is the same as String but it can only hold a sigle character at a time. Single quotes must be used.
 		
 		// Print other variable types
-		System.out.println("-----------------\\Other data types:\n -This is a byte: " + byteNum + "\n -This is a short: " + shortNum + "\n -This is a long: " + longNum + "\n -This is a char: " + letter + "\n-----------------");
+		System.out.println("-----------------\nOther data types:\n -This is a byte: " + byteNum + "\n -This is a short: " + shortNum + "\n -This is a long: " + longNum + "\n -This is a char: " + letter + "\n-----------------");
 		
 		// Making a Scanner so the user can input data
 		Scanner keyboard = new Scanner(System.in);
