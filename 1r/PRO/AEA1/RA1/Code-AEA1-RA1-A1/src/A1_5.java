@@ -7,7 +7,7 @@ public class A1_5 {
 	// Declare all variables
 	double euros;
 	double usDollars;
-	final double EURO_TO_USD_RATIO = 2.20462;
+	final double EURO_TO_USD_RATIO = 1.15;
 	Scanner keyboard = new Scanner(System.in);
 	// 
 	System.out.println("-----------------------------------------------------------");
