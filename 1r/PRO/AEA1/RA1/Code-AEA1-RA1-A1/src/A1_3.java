@@ -7,7 +7,7 @@ public class A1_3 {
 	// Declare all variables
 	double base;
 	double height;
-	double perimeter;
+	double area;
 	Scanner keyboard = new Scanner(System.in);
 	// 
 	System.out.println("-----------------------------------------------------");
@@ -21,12 +21,12 @@ public class A1_3 {
 	height = keyboard.nextDouble();
 	System.out.println("-----------------------------------------------------");
 	// Calculate the area
-	perimeter = (base * height) / 2;
+	area = (base * height) / 2;
 	// Now we return the answer
 	System.out.println("----------------Here is your result:-----------------");
 	System.out.println("-----------------------------------------------------");
 	System.out.println("· Base: " + base + ", height: " + height);
-	System.out.println("· Perimeter: " + perimeter);
+	System.out.println("· area: " + area);
 	System.out.println("-----------------------------------------------------");
 	//
     }

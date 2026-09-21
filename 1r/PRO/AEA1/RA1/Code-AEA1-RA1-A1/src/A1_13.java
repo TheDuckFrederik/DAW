@@ -2,7 +2,7 @@
 import java.util.Scanner;
 //
 public class A1_13 {
-
+    //
     public static void main(String[] args) {
 	// Declare all variables
 	int hours;
