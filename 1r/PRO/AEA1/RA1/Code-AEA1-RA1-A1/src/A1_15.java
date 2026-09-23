@@ -30,8 +30,8 @@ public class A1_15 {
 	days = (minutes / 1440) % 7;
 	hours = (minutes / 60) % 24;
 	minutes = minutes % 60;
-	System.out.println("· " + weeks + " weeks, " + days + " days, " + hours + " hours and " + minutes + " minutes");
 	//
+	System.out.println("· " + weeks + " weeks, " + days + " days, " + hours + " hours and " + minutes + " minutes");
 	System.out.println("--------------------------------------------------------");
 	//
     }

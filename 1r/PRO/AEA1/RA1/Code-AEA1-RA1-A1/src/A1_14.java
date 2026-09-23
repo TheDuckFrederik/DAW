@@ -29,7 +29,6 @@ public class A1_14 {
 	seconds = seconds % 60;
 	//
 	System.out.println("· " + hours + " hours, " + minutes + " minutes and " + seconds + " seconds");
-	//
 	System.out.println("--------------------------------------------------------");
 	//
     }
