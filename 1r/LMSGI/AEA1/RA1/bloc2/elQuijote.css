@@ -1,0 +1,56 @@
+/*  */
+body {
+    background-color: red;
+    font-family: "Comic Sans MS";
+    color: yellow;
+}
+/*  */
+h1 {
+    border: solid 3.7px;
+    padding: 3.7px;
+    background-color: purple;
+    text-align: center;
+    color: red;
+    border-color: yellow;
+}
+/*  */
+#paragraf1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: blueviolet;
+    font-size: large;
+}
+/*  */
+#paragraf2 {
+    text-align: left;
+    border: 13px solid purple;
+    width: 550px;
+    border-radius: 7px;
+    border-color: purple;
+    align-items: center;
+    padding: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 7px 13px blue;
+}
+/*  */
+#author {
+    border: 3px solid green;
+    font-size: 37px;
+    text-align: center;
+    margin-right: 70px;
+    padding: 3px;
+    margin-right: 3px;
+    margin-left: auto;
+    width: 137px;
+    color: yellow;
+    background-color: green;
+    animation: blink-animation 1s steps(1, start) infinite;
+    border-radius: 9px;
+}
+/*  */
+@keyframes blink-animation {
+    50% {
+        visibility: hidden;
+    }
+}
+/*  */
