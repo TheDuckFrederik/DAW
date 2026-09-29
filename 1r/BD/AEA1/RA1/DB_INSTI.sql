@@ -4,7 +4,7 @@ CREATE DATABASE IF NOT EXISTS DB_INSTI;
 USE DB_INSTI;
 -- 
 CREATE TABLE IF NOT EXISTS estudis (
-    idEstudi VARCHAR(10) NOT NULL PRIMARY KEY,
+    codiEstudi VARCHAR(10) NOT NULL PRIMARY KEY,
     nom VARCHAR(100) NOT NULL
 );
 -- 
@@ -17,17 +17,17 @@ CREATE TABLE IF NOT EXISTS materies (
 -- 
 CREATE TABLE IF NOT EXISTS cursos (
     idCurs INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    idEstudi VARCHAR(10) NOT NULL,
-    CONSTRAINT idEstudi
-    FOREIGN KEY (idEstudi)
-    REFERENCES estudis(idEstudi),
+    codiEstudi VARCHAR(10) NOT NULL,
+    CONSTRAINT codiEstudi
+    FOREIGN KEY (codiEstudi)
+    REFERENCES estudis(codiEstudi),
 	idMateria INT,
     CONSTRAINT idMateria
     FOREIGN KEY (idMateria)
     REFERENCES materies(idMateria)
 );
 --
-INSERT INTO estudis (idEstudi, nom)
+INSERT INTO estudis (codiEstudi, nom)
 VALUES 
 ("DAW", "Desenvolupament d'aplicacions Web"),
 ("DAM", "Desenvolupament d'aplicacions Multiplataforma"),
@@ -46,7 +46,7 @@ VALUES
 ("DWES", "Desenvolupament web en entorn servidor", NULL),
 ("DIW", "Disseny d'interfcies web", NULL);
 -- 
-INSERT INTO cursos (idEstudi, idMateria)
+INSERT INTO cursos (codiEstudi, idMateria)
 VALUES
 ("ASIX", 4),
 ("DAM", 4),
