@@ -1,39 +1,39 @@
 -- 
-CREATE DATABASE IF NOT EXISTS DB_INSTI;
+CREATE DATABASE IF NOT EXISTS bd_insti;
 -- 
-USE DB_INSTI;
+USE bd_insti;
 -- 
 CREATE TABLE IF NOT EXISTS estudis (
-    codiEstudi VARCHAR(10) NOT NULL PRIMARY KEY,
+    codi_estudi VARCHAR(10) NOT NULL PRIMARY KEY,
     nom VARCHAR(100) NOT NULL
 );
 -- 
 CREATE TABLE IF NOT EXISTS materies (
-    idMateria INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    codiMateria VARCHAR(20) UNIQUE,
+    id_materia INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    codi_materia VARCHAR(20) UNIQUE,
     nom VARCHAR(100),
     hores TINYINT UNSIGNED NULL
 );
 -- 
 CREATE TABLE IF NOT EXISTS cursos (
-    idCurs INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    codiEstudi VARCHAR(10) NOT NULL,
-    CONSTRAINT codiEstudi
-    FOREIGN KEY (codiEstudi)
-    REFERENCES estudis(codiEstudi),
-	idMateria INT,
-    CONSTRAINT idMateria
-    FOREIGN KEY (idMateria)
-    REFERENCES materies(idMateria)
+    id_curs INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    codi_estudi VARCHAR(10) NOT NULL,
+    CONSTRAINT codi_estudi
+    FOREIGN KEY (codi_estudi)
+    REFERENCES estudis(codi_estudi),
+	id_materia INT,
+    CONSTRAINT id_materia
+    FOREIGN KEY (id_materia)
+    REFERENCES materies(id_materia)
 );
 --
-INSERT INTO estudis (codiEstudi, nom)
+INSERT INTO estudis (codi_estudi, nom)
 VALUES 
 ("DAW", "Desenvolupament d'aplicacions Web"),
 ("DAM", "Desenvolupament d'aplicacions Multiplataforma"),
 ("ASIX", "Administracio de Sistemes Informatics en Xarxes");
 -- 
-INSERT INTO materies (codiMateria, nom, hores)
+INSERT INTO materies (codi_materia, nom, hores)
 VALUES
 ("SASP", "Sostenibilitat aplicada al sistema productiu", NULL),
 ("ED", "Entorns de desenvolupament", 99),
@@ -46,7 +46,7 @@ VALUES
 ("DWES", "Desenvolupament web en entorn servidor", NULL),
 ("DIW", "Disseny d'interfcies web", NULL);
 -- 
-INSERT INTO cursos (codiEstudi, idMateria)
+INSERT INTO cursos (codi_estudi, id_materia)
 VALUES
 ("ASIX", 4),
 ("DAM", 4),
