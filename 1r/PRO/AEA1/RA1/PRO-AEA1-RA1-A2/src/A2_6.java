@@ -25,40 +25,14 @@ public class A2_6 {
 	System.out.println("Introdueix el tercer numero:");
 	num3 = teclat.nextInt();
 	System.out.println("------------------------------------------------------");
-	// Determina quin es el numero mes numeroGran i quin es el mes numeroPetit, un cop fet guardal's a la variable corresponent
-	if (num1 > num2) {
-	    numeroGran = num1;
-	    numeroPetit = num2;
-	} else if (num1 < num2) {
-	    numeroGran = num2;
-	    numeroPetit = num1;
-	} else if (num1 == num2) {
-	    numeroGran = num1;
-	    numeroPetit = num1;
+	// Determina si el tercer numero es la suma del primer i el segon
+	if ((num1 + num2) == num3) {
+	    System.out.println("- Correcte, "+ num1 + " + " + num2 + " = " + num3);
+	    System.out.println("------------------------------------------------------");
+	} else {
+	    System.out.println("- Incorrecte, "+ num1 + " + " + num2 + " != " + num3);
+	    System.out.println("------------------------------------------------------");
 	}
-	//
-	if (num3 > numeroPetit) {
-	    if (num3 > numeroGran) {
-		numeroMitja = numeroGran;
-		numeroGran = num3;
-	    } else {
-		numeroGran = num3;
-	    }
-	} else if (num3 < numeroGran) {
-	    if (num3 < numeroPetit) {
-		numeroMitja = numeroPetit;
-		numeroPetit = num3;
-	    } else {
-		num3 = numeroMitja;
-	    }
-	} else if (num3 == numeroGran) {
-	    numeroMitja = num3;
-	} else if (num3 == numeroPetit) {
-	    numeroMitja = num3;
-	}
-	//
-	System.out.println("- El numero mes numero mes gran es: " + numeroGran + "\n- El numero del mig es: " + numeroMitja + "\n- El numero mes petit es: " + numeroPetit);
-	System.out.println("------------------------------------------------------");
 	//
     }
     //

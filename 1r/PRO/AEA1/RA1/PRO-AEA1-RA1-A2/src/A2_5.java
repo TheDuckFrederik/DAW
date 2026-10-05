@@ -28,7 +28,7 @@ public class A2_5 {
 	System.out.println("Introdueix el tercer numero:");
 	num3 = teclat.nextInt();
 	System.out.println("---------------------------------------------------");
-	// Determina quin es el numero mes numeroGran i quin es el mes numeroPetit, un cop fet guardal's a la variable corresponent
+	// Determina quin es el numero mes gran, quin es el mitja i quin es el mes petit, un cop fet guardal's a la variable corresponent
 	if (num1 > num2) {
 	    numeroGran = num1;
 	    numeroPetit = num2;
