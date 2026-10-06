@@ -21,7 +21,9 @@ public class A2_10 {
 	    rangNota = "Matricula d'honor";
 	} else if (nota == 9) {
 	    rangNota = "Excel·lent";
-	} else if (nota > 7 && nota < 9) {
+	} else if (nota == 8) {
+	    rangNota = "Notable";
+	} else if (nota == 7) {
 	    rangNota = "Notable";
 	} else if (nota == 6) {
 	    rangNota = "Be";
