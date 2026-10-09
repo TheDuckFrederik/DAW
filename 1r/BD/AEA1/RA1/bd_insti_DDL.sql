@@ -36,4 +36,12 @@ VALUES
 ("MAT", "Matemàtiques", NULL),
 ("TEC", "Tecnologia", NULL),
 ("MU", "Música", 4);
--- Els 3 enunciats
+-- Els 3 enunciats: 1. Fer un INSERT a materies sense haber de posar NULL a les hores.
+INSERT INTO materies (codi_materia, nom)
+VALUES
+("QM", "Quimica");
+-- 2. Fer un select de nomes els noms de les materies
+SELECT nom FROM materies;
+-- 3. Borrar un registre
+DELETE FROM materies WHERE codi_materia = 'QM';
+-- 
