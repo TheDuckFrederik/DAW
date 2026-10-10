@@ -21,6 +21,7 @@
     <h1>Els paisos i les seves capitals</h1>
     <!--  -->
     <?php
+        // Creo el array
         $EU = array("Italy"=>"Rome", 
         "Luxembourg"=>"Luxembourg",
         "Belgium"=> "Brussels", 
@@ -33,7 +34,7 @@
         "Greece" => "Athens", 
         "Ireland"=>"Dublin", 
         "Netherlands"=>"Amsterdam");
-        //
+        // Ho mostro a una taula
         echo "<table> 
             <tr>
                 <th>Pais</th>
