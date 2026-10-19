@@ -1,0 +1,68 @@
+/*  */
+body {
+    background-color: #d2d2d2;
+}
+/*  */
+#titol {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+/*  */
+h1 {
+    font-family: "Courier New", monospace;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+/*  */
+hr {
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+/*  */
+.linia {
+    font-size: 21px;
+}
+/*  */
+.nom {
+    display: inline-block;
+    width: 215px;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    color: blue;
+    margin-left: 73px;
+}
+/*  */
+.formula {
+    font-family: "Courier New", monospace;
+    color: white;
+    background-color: black;
+    padding: 3px 7px;
+}
+/*  */
+.nom2 {
+    display: inline-block;
+    width: 90px;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    color: red;
+    text-decoration: underline;
+    margin-left: 73px;
+}
+/*  */
+.etiqueta {
+    font-family: "Courier New", monospace;
+    color: black;
+    background-color: yellow;
+    padding: 3px 7px;
+    border: 1.3px;
+    border-style: solid;
+    border-color: black;
+}
+/*  */

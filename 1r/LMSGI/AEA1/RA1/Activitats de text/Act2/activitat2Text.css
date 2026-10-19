@@ -1,0 +1,40 @@
+/*  */
+body {
+    background-color: #242424;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #f0f0f0;
+    padding: 25px 45px;
+}
+/*  */
+h1 {
+    color: #ff4c4c;
+    font-size: 30px;
+}
+/*  */
+p {
+    background-color: #535252;
+    padding: 15px 20px;
+    margin-bottom: 40px;
+}
+/*  */
+.rectangleAmbMarginVermell {
+    border: 0px;
+    border-left: 7px;
+    border-style: solid;
+    border-color: #ff4c4c;
+}
+/*  */
+.rectangleAmbRadius {
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(133, 134, 134);
+    border-radius: 5px;
+}
+/*  */
+.ressaltat {
+    background-color: #3c2020;
+    color: #f09090;
+    padding: 2px 5px;
+}
+/*  */
