@@ -1,0 +1,31 @@
+/*  */
+body {
+    font-family: "Segoe UI", sans-serif;
+}
+/*  */
+section + section {
+    margin-top: 60px;
+}
+/*  */
+h2 {
+    color: #2c3e50;
+    font-size: 28px;
+    text-align: center;
+}
+/*  */
+li {
+    color: #34495e;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    padding: 18px 25px;
+    margin-bottom: 14px;
+}
+/*  */
+.sense_numero {
+    list-style-type: none;
+}
+/*  */
+#horaris {
+    list-style-type: upper-roman;
+}
+/*  */
