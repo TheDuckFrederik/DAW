@@ -1,0 +1,365 @@
+/*  */
+body {
+    margin: 0;
+    background-color: #FAFBFC;
+    color: #212121;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+/*  */
+h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #1A237E;
+    margin: 0;
+}
+/*  */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 48px;
+    background-color: white;
+    border-bottom: 2px solid #ECF0F4;
+}
+/*  */
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+/*  */
+#cercle {
+    width: 48px;
+    height: 48px;
+    background-color: #1A237E;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+/*  */
+#cerca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #F4F6F9;
+    border: 2px solid #C9D2DE;
+    border-radius: 21px;
+    padding: 10px 16px;
+}
+/*  */
+#cerca input {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 15px;
+    color: #546E7A;
+    width: 160px;
+}
+/*  */
+nav {
+    background-color: white;
+    border-bottom: 2px solid #ECF0F4;
+    padding: 8px 48px;
+}
+/*  */
+nav ul {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*  */
+nav li {
+    font-size: 16px;
+    color: #4A5560;
+    padding: 8px 16px;
+    border-radius: 17px;
+}
+/*  */
+nav li.actiu {
+    background-color: #1A237E;
+    color: white;
+    font-weight: bold;
+}
+/*  */
+#hero {
+    margin: 24px 48px 0;
+    height: 336px;
+    border-radius: 20px;
+    background:
+        linear-gradient(to top, rgba(13, 20, 64, 0.88), rgba(13, 20, 64, 0) 70%),
+        linear-gradient(#283593, #0D1440);
+    color: white;
+    padding: 36px 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+/*  */
+#xip {
+    background-color: #EF6C00;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 7px 14px;
+    border-radius: 8px;
+}
+/*  */
+#hero h2 {
+    color: white;
+    font-size: 46px;
+    position: absolute;
+    bottom: 105px;
+}
+/*  */
+#hero p {
+    color: #D7DCF2;
+    font-size: 18px;
+    position: absolute;
+    bottom: 70px;
+}
+/*  */
+#hero a {
+    background-color: #EF6C00;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 38px;
+}
+/*  */
+#meta {
+    color: #C5CAE9;
+    font-size: 14px;
+    position: absolute;
+    bottom: 48px;
+    right: 40px;
+}
+/*  */
+main {
+    padding: 44px 48px;
+}
+/*  */
+.titol-seccio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+/*  */
+.titol-seccio h3 {
+    font-size: 26px;
+}
+/*  */
+.titol-seccio a {
+    color: #1A237E;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+/*  */
+.graella {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 44px;
+}
+/*  */
+.targeta {
+    background-color: white;
+    border: 2px solid #E9EDF2;
+    border-radius: 16px;
+    width: 336px;
+    box-shadow: 2px 6px 8px #EDEFF3;
+    padding-bottom: 20px;
+}
+/*  */
+.foto {
+    height: 180px;
+    border-radius: 14px 14px 0 0;
+    margin-bottom: 16px;
+    position: relative;
+}
+/*  */
+.foto1 { background: linear-gradient(#7EC8F2, #1565C0); }
+/*  */
+.foto2 { background: linear-gradient(#4DD0C7, #00838F); }
+/*  */
+.foto3 { background: linear-gradient(#A5D6A7, #388E3C); }
+/*  */
+.foto4 { background: linear-gradient(#FFCC80, #F57C00); }
+/*  */
+.foto5 { background: linear-gradient(#C5B3E8, #5E35B1); }
+/*  */
+.foto6 { background: linear-gradient(#F8BBD0, #AD1457); }
+/*  */
+.tag {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 13px;
+    margin-left: 20px;
+}
+/*  */
+.europa { background-color: #3949AB; }
+/*  */
+.asia { background-color: #C62828; }
+/*  */
+.america { background-color: #2E7D32; }
+/*  */
+.estrella {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 34px;
+    height: 34px;
+    background-color: #FFC107;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+/*  */
+.targeta h4 {
+    font-size: 21px;
+    margin: 14px 20px 6px;
+}
+/*  */
+.targeta p {
+    color: #546E7A;
+    font-size: 14px;
+    margin: 0 20px;
+}
+/*  */
+#continents {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+/*  */
+#continents h3 {
+    font-size: 20px;
+    margin-right: 8px;
+}
+/*  */
+.pill {
+    border: 2px solid #C9D2DE;
+    background-color: white;
+    border-radius: 18px;
+    padding: 8px 18px;
+    font-size: 15px;
+}
+/*  */
+footer {
+    background-color: #20264E;
+    color: #B0BCD8;
+    padding: 40px 48px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+/*  */
+#peu-brand h2 {
+    color: white;
+    font-size: 24px;
+}
+/*  */
+.columna {
+    margin-left: 40px;
+}
+/*  */
+.columna h3 {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+/*  */
+.columna a {
+    display: block;
+    color: #B0BCD8;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 4px 0;
+}
+/*  */
+#xarxes {
+    display: flex;
+    gap: 14px;
+}
+/*  */
+#xarxes span {
+    width: 34px;
+    height: 34px;
+    border: 2px solid #B0BCD8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+/*  */
+#legal {
+    width: 100%;
+    border-top: 2px solid #3A4270;
+    margin: 24px 0 0;
+    padding-top: 16px;
+    color: #8E9AC0;
+    font-size: 13px;
+}
+/*  */
+@media (max-width: 700px) {
+    /*  */
+    header, nav, main, #hero {
+        margin-left: 16px;
+        margin-right: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    /*  */
+    #cerca input {
+        width: 90px;
+    }
+    /*  */
+    #hero h2 {
+        font-size: 27px;
+        bottom: 130px;
+    }
+    /*  */
+    #hero p {
+        font-size: 14px;
+        bottom: 100px;
+    }
+    /*  */
+    #hero a {
+        bottom: 40px;
+        padding: 10px 18px;
+    }
+    /*  */
+    #meta {
+        display: none;
+    }
+    /*  */
+    .graella {
+        flex-direction: column;
+    }
+    /*  */
+    .targeta {
+        width: 100%;
+    }
+    /*  */
+    .columna {
+        margin-left: 0;
+    }
+    /*  */
+}

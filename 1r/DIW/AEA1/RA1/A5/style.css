@@ -1,0 +1,139 @@
+/*  */
+/* cos de la pagina en blanc, sense marges */
+body {
+    background-color: white;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/*  */
+/* contenidor general: relative perque totes les capes de dins es posicionin absolutes respecte ell */
+#pagina {
+    position: relative;
+    width: 650px;
+    height: 558px;
+    margin: 40px auto;
+}
+/*  */
+/* capçalera: franja verda de dalt, z-index 1 perque quedi sota la taronja */
+#capcalera {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 650px;
+    height: 43px;
+    background-color: #008000;
+    z-index: 1;
+}
+/*  */
+#capcalera h1 {
+    color: black;
+    font-size: 24px;
+    margin: 6px 0px 0px 15px;
+}
+/*  */
+/* capa taronja: fons de tota la zona central, va tocant la capçalera (43) i la fila de baix (413) */
+#taronja {
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    width: 650px;
+    height: 370px;
+    background-color: #FEA500;
+    z-index: 2;
+}
+/*  */
+/* seccio d'imatges: les 3 fotos de picsum (300x150) apilades DINS de la capa taronja */
+/* comencen a dalt de tot de la taronja i la tercera arriba justo al final (370 / 3 = 123.33) */
+#imatges {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 240px;
+}
+/*  */
+/* display block + margin 0 perque les fotos quedin una justo a sobre de l'altra, sense cap espai */
+#imatges img {
+    display: block;
+    width: 240px;
+    height: 123.33px;
+    margin: 0px;
+}
+/*  */
+/* bloc de text: caixa groca de baix a l'esquerra, toqueja la llista vermella i la franja del peu */
+#text {
+    position: absolute;
+    top: 413px;
+    left: 0px;
+    width: 450px;
+    height: 118px;
+    background-color: #FFFF00;
+    z-index: 3;
+}
+/*  */
+#text p {
+    margin: 8px 10px;
+    font-size: 13px;
+    color: black;
+}
+/*  */
+/* bloc de llista: caixa vermella de baix a la dreta, amb les 3 opcions */
+#opcions {
+    position: absolute;
+    top: 413px;
+    right: 0px;
+    width: 200px;
+    height: 70px;
+    background-color: #FF0000;
+    z-index: 3;
+}
+/*  */
+#opcions ul {
+    margin: 6px 0px 0px 25px;
+    font-size: 14px;
+    color: black;
+}
+/*  */
+#opcions li {
+    margin: 2px 0px;
+}
+/*  */
+/* caixa verda petita: va tocant justo sota la llista i arriba a la franja del peu */
+#verd {
+    position: absolute;
+    top: 483px;
+    right: 0px;
+    width: 200px;
+    height: 48px;
+    background-color: #008000;
+    z-index: 3;
+}
+/*  */
+/* peu: franja verda que toqueja les caixes de sobre */
+#franja {
+    position: absolute;
+    top: 531px;
+    left: 0px;
+    width: 650px;
+    height: 11px;
+    background-color: #008000;
+    z-index: 4;
+}
+/*  */
+/* barra grisa inferior tocant la franja verda, amb l'enllaç a sobre */
+#barra {
+    position: absolute;
+    top: 542px;
+    left: 0px;
+    width: 650px;
+    height: 16px;
+    background-color: #808080;
+    z-index: 4;
+}
+/*  */
+#boto {
+    position: absolute;
+    top: 1px;
+    left: 30px;
+    color: black;
+    font-size: 12px;
+}

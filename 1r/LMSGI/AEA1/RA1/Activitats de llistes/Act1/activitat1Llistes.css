@@ -1,0 +1,39 @@
+/*  */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #2c3e50;
+}
+/*  */
+h1 {
+    font-size: 42px;
+    border-bottom: 4px solid #2c3e50;
+    padding-bottom: 10px;
+}
+/*  */
+h2 {
+    color: #34495e;
+    font-size: 30px;
+}
+/*  */
+li {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+/*  */
+#llenguatges {
+    list-style-type: none;
+    padding-left: 20px;
+}
+/*  */
+#llenguatges img {
+    width: 32px;
+    margin-right: 13px;
+    vertical-align: middle;
+}
+/*  */
+#ia {
+    list-style-image: url("imatges/ai.png");
+    padding-left: 20px;
+}
+/*  */
