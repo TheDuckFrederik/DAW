@@ -17,9 +17,9 @@ public class main {
 	double porcentageMitjanes = 0;
 	double porcentageBaixes = 0;
 	// Saludem al usuari, i especifiquem que fa aquest programa.
-//	System.out.println("--------------------------------------------------------------------------------------");
-//	System.out.println("---------------------Programa d'informacio de jugadores de basquet--------------------");
-//	System.out.println("--------------------------------------------------------------------------------------");
+	//	System.out.println("--------------------------------------------------------------------------------------");
+	//	System.out.println("---------------------Programa d'informacio de jugadores de basquet--------------------");
+	//	System.out.println("--------------------------------------------------------------------------------------");
 	// Fem un while perque no sabem quantes repeticions necesitarem, la condicio per que s'acavi es que l'alçada sigui -1
 	while (h != -1) {
 	    h = 0;
@@ -58,10 +58,10 @@ public class main {
 			System.out.println();
 			// Imprimim la alçada en cm sense decimals amb el printf i indiquem el rang, el segon print es per deixar espai entre les entrades.
 		    }
+		    // Sumem 1 a i aqui perque si les dades estan a alguna de les excepcions no es suma el total de jugadores
+		    i ++;
 		    //
 		}
-		// Sumem 1 a i aqui perque si les dades estan a alguna de les excepcions no es suma el total de jugadores
-		i ++;
 		// Si el usuari posa -1 i no hi ha aquesta condicio, pasara per tot el bucle i sumara un a i.
 	    } else if (h == -1) {
 		// Aque es printa el misatge per la condicio on la alçada es menor a 1.20.
@@ -113,6 +113,8 @@ public class main {
 	    System.out.println("El percentatge de jugadores baixes sobre el total és: " + porcentageBaixes);
 	    //
 	}
+	//
+	in.close();
 	//
     }
     //

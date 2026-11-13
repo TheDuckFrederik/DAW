@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS bodegues (
     adreca VARCHAR(100) NOT NULL,
     telefon CHAR(9) NOT NULL,
     lloc_web VARCHAR(50) NOT NULL,
-    id_denominacio_origen INT NOT NULL,
+    id_denominacio_origen INT UNSIGNED NOT NULL,
     FOREIGN KEY (id_denominacio_origen)
         REFERENCES denominacions_origen(id_denominacio_origen)
 );
@@ -41,8 +41,8 @@ CREATE TABLE IF NOT EXISTS vins (
     any_collita YEAR NOT NULL,
     tipus ENUM('blanc', 'negre', 'rosat', 'escumos') NOT NULL,
     preu_unitat DOUBLE NOT NULL,
-    id_varietat_raim_principal INT NOT NULL,
-    id_bodega INT NOT NULL,
+    id_varietat_raim_principal INT UNSIGNED NOT NULL,
+    id_bodega INT UNSIGNED NOT NULL,
     FOREIGN KEY (id_varietat_raim_principal)
         REFERENCES varietats_raim(id_varietat_raim),
     FOREIGN KEY (id_bodega)
@@ -50,8 +50,8 @@ CREATE TABLE IF NOT EXISTS vins (
 );
 --
 CREATE TABLE IF NOT EXISTS vi_varietat (
-    id_varietat_raim INT NOT NULL,
-    id_vi INT NOT NULL,
+    id_varietat_raim INT UNSIGNED NOT NULL,
+    id_vi INT UNSIGNED NOT NULL,
     PRIMARY KEY (id_varietat_raim, id_vi),
     FOREIGN KEY (id_varietat_raim)
         REFERENCES varietats_raim(id_varietat_raim)
@@ -156,3 +156,4 @@ VALUES
 ((SELECT id_varietat_raim FROM varietats_raim WHERE nom = "Malvasia"),      (SELECT id_vi FROM vins WHERE nom = "Malvasia dolça")),
 ((SELECT id_varietat_raim FROM varietats_raim WHERE nom = "Garnatxa roja"), (SELECT id_vi FROM vins WHERE nom = "Garnatxa del Camp")),
 ((SELECT id_varietat_raim FROM varietats_raim WHERE nom = "Picapoll negre"),(SELECT id_vi FROM vins WHERE nom = "Garnatxa del Camp"));
+--
