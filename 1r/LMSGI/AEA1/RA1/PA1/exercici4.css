@@ -1,0 +1,40 @@
+/*  */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 100px;
+}
+/*  */
+nav a {
+    display: inline-block;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 450px;
+    height: 150px;
+    line-height: 150px;
+    font-family: Lucida, sans-serif;
+    font-size: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+/*  */
+nav a:hover {
+    outline: 3px solid white;
+}
+/*  */
+#red {
+    background-color: red;
+}
+/*  */
+#green {
+    background-color: green;
+}
+/*  */
+#blue {
+    background-color: blue;
+}
+/*  */

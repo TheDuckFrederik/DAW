@@ -1,0 +1,25 @@
+/*  */
+.color {
+    display: block;
+    width: 96vw;
+    height: 98vh;
+    outline: 2px solid black;
+    margin: 0 auto 20px auto;
+}
+/*  */
+#red {
+    background-color: red;
+}
+/*  */
+#green {
+    background-color: green;
+}
+/*  */
+#blue {
+    background-color: blue;
+}
+/*  */
+.color:last-child {
+    margin-bottom: 0;
+}
+/*  */
