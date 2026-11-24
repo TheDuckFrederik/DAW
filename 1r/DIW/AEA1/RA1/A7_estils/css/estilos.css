@@ -1,0 +1,83 @@
+/*  */
+/* Activitat 7: estils CSS per a la taula de iPods de ejercicio.html */
+body {
+    background-color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+}
+/*  */
+/* titol de la pagina */
+h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    text-align: center;
+    margin: 30px 0px;
+}
+/*  */
+/* taula centrada, vores fusionades i vora exterior negra de 1px */
+table {
+    margin: 0px auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+/*  */
+/* totes les celes amb vora negra de 1px, padding i text centrat */
+th, td {
+    border: 1px solid black;
+    padding: 6px 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+/*  */
+/* totes les th van amb fons blau i text negre (imatges, pantalla, temps...) */
+th {
+    background-color: #0000FF;
+    color: black;
+}
+/*  */
+/* la primera cela de la fila d'imatges es buida: sense fons */
+thead th:first-child {
+    background-color: white;
+}
+/*  */
+/* columna de capçaleres (Capacidad, Colores...): fons vermell i text blanc */
+th.primera {
+    background-color: #FF0000;
+    color: white;
+}
+/*  */
+/* a la fila dels colors, les th Blanco i Negro van sense fons, text negre */
+#listas th:not(.primera) {
+    background-color: white;
+    color: black;
+}
+/*  */
+/* l'ultima cela de la fila de colors (llista Negro/Blanco) va blava, text negre */
+#listas td[colspan="2"] {
+    background-color: #0000FF;
+    color: black;
+}
+/*  */
+/* fila Capacidad: els valors dels GB amb fons gris i text negre */
+#fila td, td.gb {
+    background-color: #808080;
+    color: black;
+}
+/*  */
+/* el p dels GB sense marges */
+#fila p {
+    margin: 0px;
+}
+/*  */
+/* cela groga: la de 5 horas, amb text negre */
+#cinco {
+    background-color: #FFFF00;
+    color: black;
+}
+/*  */
+/* les llistes de colors van amb el text vermell */
+ul {
+    margin: 0px;
+    padding-left: 20px;
+    text-align: left;
+    color: #FF0000;
+}
