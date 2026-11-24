@@ -12,3 +12,8 @@ body {
     list-style-type: upper-roman;
 }
 /*  */
+strong {
+    background-color: yellow;
+    text-decoration: underline;
+}
+/*  */

@@ -1,0 +1,64 @@
+/*  */
+body {
+    background-color: black;
+    font-family: Arial;
+    margin: 0;
+}
+/*  */
+h1 {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+/*  */
+hr {
+    border-color: white;
+}
+/*  */
+.contenidor {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+}
+/*  */
+figure {
+    background-color: #2b3040;
+    border: 1px solid #3a3a5a;
+    border-radius: 8px;
+    margin: 0;
+    padding: 15px;
+    width: 280px;
+    box-sizing: border-box;
+}
+/*  */
+figure img {
+    display: block;
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+/*  */
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+}
+/*  */
+.nom {
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+/*  */
+.any {
+    display: block;
+    color: #d4a017;
+    font-size: 13px;
+}
+/*  */
+figure:hover {
+    transform: translateY(-10px);
+}
+/*  */

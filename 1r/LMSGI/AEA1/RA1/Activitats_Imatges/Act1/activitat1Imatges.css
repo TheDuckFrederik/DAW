@@ -1,0 +1,84 @@
+/*  */
+body {
+    width: 2000px;
+    margin: 0 auto;
+    font-family: Arial;
+}
+/*  */
+header {
+    background-image: url("imatges/imatgeHeader.webp");
+    background-repeat: no-repeat;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 30px 40px;
+    color: white;
+}
+/*  */
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+/*  */
+header p {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+/*  */
+h2 {
+    color: #333;
+    font-size: 22px;
+    border-left: 5px solid #333;
+    padding-left: 12px;
+    margin: 25px 25px 15px 25px;
+}
+/*  */
+.contenidor {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 0 25px 25px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+/*  */
+.destinacio {
+    width: 580px;
+    height: 280px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 7px;
+    padding: 15px;
+    color: white;
+}
+/*  */
+.destinacio h3 {
+    font-size: 24px;
+    margin: 0 0 8px 0;
+    text-shadow: 1px 1px 2px black;
+}
+/*  */
+.preu {
+    background-color: #e8a33d;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 13px;
+}
+/*  */
+.destinacio:hover {
+    transform: scale(1.03);
+}
+/*  */
+#puntacana {
+    background-image: url("imatges/PuntaCana.webp");
+}
+/*  */
+#italia {
+    background-image: url("imatges/Italia.webp");
+}
+/*  */
+#senegal {
+    background-image: url("imatges/Senegal.webp");
+}
+/*  */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
+    <title>Activitat 7 - Aplicar estils CSS</title>
+    <!--  -->
+    <link rel="stylesheet" href="estil.css">
+    <!--  -->
+</head>
+<body>
+    <h1>Ejercicio práctico con Tablas</h1>
+    <!--  -->
+    <!-- taula de comparacio de mobil: fila d'imatges, 4 files de caracteristiques i la fila final -->
+    <table>
+        <!-- fila de les imatges dels 5 mobil, amb fons blau -->
+        <tr id="imatges">
+            <td></td>
+            <!--  -->
+            <td><img src="movil1.png" alt="movil 1"></td>
+            <!--  -->
+            <td><img src="movil2.png" alt="movil 2"></td>
+            <!--  -->
+            <td><img src="movil3.png" alt="movil 3"></td>
+            <!--  -->
+            <td><img src="movil4.png" alt="movil 4"></td>
+            <!--  -->
+            <td><img src="movil5.png" alt="movil 5"></td>
+        </tr>
+        <!--  -->
+        <!-- fila Capacidad: els valors van amb fons gris -->
+        <tr>
+            <td class="vermell">Capacidad</td>
+            <!--  -->
+            <td class="gris">2GB</td>
+            <!--  -->
+            <td class="gris">4GB</td>
+            <!--  -->
+            <td class="gris">8GB</td>
+            <!--  -->
+            <td class="gris">32GB</td>
+            <!--  -->
+            <td class="gris">2GB</td>
+        </tr>
+        <!--  -->
+        <!-- fila Colores: llistes de colors, la ultima cela va blava -->
+        <tr>
+            <td class="vermell">Colores</td>
+            <!--  -->
+            <td colspan="2">Blanco<br>• Negro<br>• Rosa<br>• Dorado</td>
+            <!--  -->
+            <td>Negro</td>
+            <!--  -->
+            <td colspan="2" class="blau">• Negro<br>• Blanco</td>
+        </tr>
+        <!--  -->
+        <!-- fila Pantalla: les dues celes van blaves -->
+        <tr>
+            <td class="vermell">Pantalla</td>
+            <!--  -->
+            <td colspan="3" class="blau">3 pulgadas</td>
+            <!--  -->
+            <td colspan="2" class="blau">7 pulgadas</td>
+        </tr>
+        <!--  -->
+        <!-- fila Tiempo de Carga: la cela groga es la de 5 horas, i la ultima fila es la del 75% -->
+        <tr>
+            <td class="vermell" rowspan="2">Tiempo de Carga</td>
+            <!--  -->
+            <td colspan="3" class="blau" rowspan="2">1 hora</td>
+            <!--  -->
+            <td colspan="2" class="groc">5 horas</td>
+        </tr>
+        <!--  -->
+        <tr>
+            <td colspan="2" class="blau">30 minutos para 75%</td>
+        </tr>
+    </table>
+</body>
+</html>
